@@ -1,18 +1,24 @@
 
 .intercom {
-    background-color: #103d82;
-    color : #103d82;
-    height: 9,5em;
-    
+    background-color: #103d82; /*couleur bleue de la banderole tout en haut*/
+    padding: 0 50px; /*créer un espace entre le logo et le début de la banderole bleue*/
 }
 
 body {
-    width : 85%;
-    
-    margin-right: auto;
-    margin-left: auto;
+    width : 85%; /*créer les deux bandes blanches verticales de chaque côté de la page*/
+    box-shadow: -2px 4px 42px -6px rgba(0, 0, 0, 0.53); /*créer des ombres autour du body*/
+
+
+    margin-right: auto; /*servent à placer le body au milieu de la page*/
+    margin-left: auto; /*voir commentaire du dessus*/
 }
 
 #logo-blanc{
-    
+    height: 7em; /*taille résonnable du logo*/
 }
+
+
+header {
+    margin-top: -20px; /*colle la banderole bleue tout en haut de la page et supprime l'espace qui existait entre.*/
+}
+

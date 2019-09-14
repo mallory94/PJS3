@@ -78,22 +78,91 @@ header {
 }
 
 
-.menu { 
-    display: list-item inline;
-}
-
 .menu a {
     color : black;
-    display: list-item inline;
+    font-family: 'Quicksand', sans-serif;
+    text-decoration: none;
+    padding: 5px 10px;
 }
 
-.menu ul{
-    /*
-    display : flex;
-    flex-direction: row; */
+
+
+.menu>ul>li {
+    position: relative;
+    float : left;
+    padding : 18px;
+}
+
+.menu>ul>li>a{
+    border-bottom: 60px;
+}
+
+.menu li a{
+    text-decoration: none;
+}
+
+
+.menu>ul>li:hover{
+    text-decoration: none;
+    border-right: 20px, solid, blueviolet;
+    border-left: 20px, solid, blueviolet;
+}
+
+
+.menu ul>li li {
+    display : none; /*fais disparaitre les sous menus*/
+}
+
+
+.menu>ul>li>ul:click>li {
+    display : display-listitem;
+    background-color : blue;
+}
+
+.menu>ul>li:hover>ul>li{
+    
+    display: block;
+    opacity: 0;
+    animation-name: sousMenuPop;
+    animation-duration:  1s;
+    animation-fill-mode: forwards;
+    border-top: 15px solid white;
+
+}
+
+.vie-scolaire>a:hover {
+    color : #a20909
+}
+
+.eau {
+    color : #2596aa;
+}
+
+.emploi>a:hover{
+    font-weight: bold; 
+    color : #c6431b;
+    border-bottom: 15px, solid, blue;
+}
+
+
+.amenagement{
+    color: #5f72b2;
+}
+
+@keyframes sousMenuPop { /*mets des barres bleues horizontales autour de la maps du footer*/
+    from {opacity: 0;}
+    to {opacity:1;}
+} 
+
+
+
+.menu>ul{
     list-style:none;   /*retire les puces des listes du menu*/
 }
 
+.menu>ul:hover li{
+    text-align: center;
+}
 
 .content {
     padding-bottom: 400px; /*sert à crée un espace vide au dessus de la carte Maps*/

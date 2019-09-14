@@ -1,4 +1,6 @@
 
+
+
 .intercom {
     background-color: #103d82; /*couleur bleue de la banderole tout en haut*/
     padding: 0 50px; /*créer un espace entre le logo et le début de la banderole bleue*/
@@ -12,7 +14,7 @@ html {
 body {
     /*width : 85%; */ /*créer les deux bandes blanches verticales de chaque côté de la page*/
     box-shadow: -2px 4px 42px -6px rgba(0, 0, 0, 0.53); /*créer des ombres autour du body*/
-
+    position: relative; /**/
 
     margin-right: auto; /*servent à placer le body au milieu de la page*/
     margin-left: auto; /*voir commentaire du dessus*/
@@ -28,6 +30,7 @@ footer{
     position: absolute;
     bottom: 0;
     /*width: 85%;*/
+    display: inline-block;
 }
 
 header {
@@ -72,4 +75,26 @@ header {
     .SoumisBandesBlanches { 
         width: 100%; /*supprime les bandes blanches*/
     }
+}
+
+
+.menu { 
+    display: list-item inline;
+}
+
+.menu a {
+    color : black;
+    display: list-item inline;
+}
+
+.menu ul{
+    /*
+    display : flex;
+    flex-direction: row; */
+    list-style:none;   /*retire les puces des listes du menu*/
+}
+
+
+.content {
+    padding-top: 121px
 }

@@ -96,5 +96,5 @@ header {
 
 
 .content {
-    padding-top: 121px
+    padding-bottom: 400px; /*sert à crée un espace vide au dessus de la carte Maps*/
 }

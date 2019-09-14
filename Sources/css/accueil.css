@@ -10,7 +10,7 @@ html {
 
 
 body {
-    width : 85%; /*créer les deux bandes blanches verticales de chaque côté de la page*/
+    /*width : 85%; */ /*créer les deux bandes blanches verticales de chaque côté de la page*/
     box-shadow: -2px 4px 42px -6px rgba(0, 0, 0, 0.53); /*créer des ombres autour du body*/
 
 
@@ -20,17 +20,18 @@ body {
 }
 
 #logo-blanc{
-    height: 7em; /*taille résonnable du logo*/
+    height: 7.5em; /*taille résonnable du logo*/
+
 }
 
 footer{
     position: absolute;
     bottom: 0;
-    width: 85%;
+    /*width: 85%;*/
 }
 
 header {
-    margin-top: -20px; /*colle la banderole bleue tout en haut de la page et supprime l'espace qui existait entre.*/
+    margin-top: -10px; /*colle la banderole bleue tout en haut de la page et supprime l'espace qui existait entre.*/
 }
 
 .googlemap {
@@ -54,8 +55,21 @@ header {
     to {background-color : #103d82;}
 } 
 
+
 /*remets des barres blanches horizontales autour de la maps du footer*/
 @keyframes ReverseBandesCouleur { 
     from {background-color : #103d82;}
     to {background-color : white;}
 } 
+
+/*restreint la largeur des div pour créer les bandes blanches*/
+.SoumisBandesBlanches {
+    width: 85%;
+}
+
+
+@media screen and (max-width: 1080px){
+    .SoumisBandesBlanches { 
+        width: 100%; /*supprime les bandes blanches*/
+    }
+}

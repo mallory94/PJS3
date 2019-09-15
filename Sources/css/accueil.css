@@ -89,12 +89,11 @@ header {
 
 .menu>ul>li {
     position: relative;
+    text-align: center;
     float : left;
     padding : 18px;
-}
-
-.menu>ul>li>a{
-    border-bottom: 60px;
+    box-sizing: border-box;
+    
 }
 
 .menu li a{
@@ -106,6 +105,7 @@ header {
     text-decoration: none;
     border-right: 20px, solid, blueviolet;
     border-left: 20px, solid, blueviolet;
+    
 }
 
 
@@ -130,7 +130,7 @@ header {
 
 }
 
-.vie-scolaire>a:hover {
+.vie-scolaire:hover>a {
     color : #a20909
 }
 
@@ -138,10 +138,22 @@ header {
     color : #2596aa;
 }
 
-.emploi>a:hover{
-    font-weight: bold; 
+.menu>ul>li:hover>a{
+    animation-name : fontBold;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+.menu>ul>li>a{
+    animation-name:fontBold;
+    animation-duration:1s;
+    animation-fill-mode: backwards;
+}
+
+.emploi:hover>a{
+    
     color : #c6431b;
-    border-bottom: 15px, solid, blue;
+    border-top: -15px, solid, red; 
 }
 
 
@@ -165,5 +177,30 @@ header {
 }
 
 .content {
-    padding-bottom: 400px; /*sert à crée un espace vide au dessus de la carte Maps*/
+    padding-bottom: 4000px; /*sert à crée un espace vide au dessus de la carte Maps*/
 }
+
+
+
+
+
+.menu>ul>li:hover>ul>.hightlight-line{
+    display: block;
+    border : 0;
+    height:0px;
+     animation-name: linegrow;
+    animation-duration:1.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes linegrow{
+    from{height: 0px;}
+    to {height: 20px;}
+}
+
+
+@keyframes fontBold{
+    from{font-weight: unset;}
+    to {font-weight: bold;}
+}
+

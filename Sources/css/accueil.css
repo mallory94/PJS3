@@ -96,45 +96,87 @@ header {
     
 }
 
+
+/* A REMETTRE APRES AVOIR REGLE LE PROBLEME DES SUB MENU QUI DISPARAISSENT*/
+.menu>ul ul {
+    padding-inline-start:  0px; /*retire*/
+}
+
 .menu li a{
     text-decoration: none;
 }
 
-
-.menu>ul>li:hover{
-    text-decoration: none;
-    border-right: 20px, solid, blueviolet;
-    border-left: 20px, solid, blueviolet;
-    
-}
-
-
-.menu ul>li li {
+.menu>ul>li>ul>li {
     display : none; /*fais disparaitre les sous menus*/
+}  
+
+
+.menu>ul>li>ul>li>ul {  /*Réduit les sous-sous menus*/
+    animation-name: subMenuDisappear;
+    animation-delay: 0s;
+    animation-duration: 0s;
+    animation-fill-mode: forwards;
+} 
+
+.menu>ul>li:hover>ul {
+    display:block;
+    border-bottom: 100px solid transparent;
 }
 
 
-.menu>ul>li>ul:click>li {
-    display : display-listitem;
-    background-color : blue;
+.menu>ul>li>ul>li:hover>ul { /*gere l'animation d'apparition*/
+    animation-name: subMenuAppear;
+    animation-fill-mode: forwards;
+    animation-duration: 0s;
 }
 
-.menu>ul>li:hover>ul>li{
-    
+
+.menu>ul>li:hover>ul>li{ /*anime l'apparition des sous menus*/
     display: block;
     opacity: 0;
-    animation-name: sousMenuPop;
+    animation-name: opacity;
     animation-duration:  1s;
     animation-fill-mode: forwards;
     border-top: 15px solid white;
+    
+}
 
+.menu>ul>li>ul {
+    position: absolute;
+}
+
+.menu>ul>li>ul>li>ul>li {
+    border-top: 15px solid white;
+    font-size: 80%;
+    text-align : left;
+    width: 150%;
+}
+
+.menu>ul>li>ul>li:hover>ul>li   { /*anime l'apparition des sous-sous-menus*/
+    /* display: block; */
+    opacity: 0;
+    animation-name: opacity;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    /*border-left: 15px solid white; */
+}
+
+
+
+
+
+.menu>ul>li>ul>li>ul>li {
+    animation-name: opacityReverse;
+    animation-duration: 1.s;
+    animation-fill-mode: forwards;
+    border : red;
 }
 
 .vie-scolaire:hover>a {
     color : #a20909
 }
 
-.eau {
+.eau:hover>a {
     color : #2596aa;
 }
 
@@ -161,25 +203,54 @@ header {
     color: #5f72b2;
 }
 
-@keyframes sousMenuPop { /*mets des barres bleues horizontales autour de la maps du footer*/
-    from {opacity: 0;}
+@keyframes opacity { /*mets des barres bleues horizontales autour de la maps du footer*/
+    from {opacity: 0; }
     to {opacity:1;}
 } 
 
+@keyframes opacityReverse { /*mets des barres bleues horizontales autour de la maps du footer*/
+    from {opacity: 1;}
+    to {opacity:0;}
+} 
 
-
-.menu>ul{
+.menu ul{
     list-style:none;   /*retire les puces des listes du menu*/
 }
 
 .menu>ul:hover li{
-    text-align: center;
+    text-align: left;
 }
 
 .content {
     padding-bottom: 4000px; /*sert à crée un espace vide au dessus de la carte Maps*/
 }
 
+@keyframes subMenuDisappear {
+    from{
+        opacity: 1;
+        width: unset;
+        height: unset;
+    }
+    to {
+        opacity: 0;
+        width: 0%;
+        height: 0;
+        line-height:0;
+    }
+}
+
+@keyframes subMenuAppear{
+    from{
+        opacity: 0;
+        width: 0%;
+        height: 0%;
+    }
+    to {
+        opacity: 1;
+        width: unset;
+        height: unset;
+    }
+}
 
 
 
@@ -188,7 +259,7 @@ header {
     display: block;
     border : 0;
     height:0px;
-     animation-name: linegrow;
+    animation-name: linegrow;
     animation-duration:1.5s;
     animation-fill-mode: forwards;
 }
@@ -204,3 +275,55 @@ header {
     to {font-weight: bold;}
 }
 
+
+/* La partie de ce code a été quasi intégralement repris de https://cssfx.dev/ avant d'être customisée */
+
+.Overline {
+    position: relative;
+  }
+  
+.Overline::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: 50%;
+    width: 100%;
+    height: 2px;
+    opacity: 0;
+    transform-origin: center;
+    transform: translate(-50%, 0) scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+li:hover>a>.Overline::before {
+    transform: translate(-50%, 0) scaleX(1);
+    opacity: 1;
+}
+
+
+
+
+
+/*******************************************************************************/
+
+.vie-scolaire .Overline::before {
+    background-color: #a20909;
+}
+
+.emploi .Overline::before {
+    background-color: #c6431b;
+}
+
+
+
+.amenagement .Overline::before {
+    background-color: #5f72b2;
+}
+
+.eau .Overline::before {
+    background-color: #2596aa;
+}
+
+.vie-scolaire .Overline::before {
+    background-color: #a20909;
+}

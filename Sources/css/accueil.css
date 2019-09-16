@@ -186,12 +186,6 @@ header {
     animation-fill-mode: forwards;
 }
 
-.menu>ul>li>a{
-    animation-name:fontBold;
-    animation-duration:1s;
-    animation-fill-mode: backwards;
-}
-
 .emploi:hover>a{
     color : #b87865;
 }

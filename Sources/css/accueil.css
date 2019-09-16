@@ -33,7 +33,7 @@ footer{
     display: inline-block;
 }
 
-header {
+header.banderole {
     margin-top: -10px; /*colle la banderole bleue tout en haut de la page et supprime l'espace qui existait entre.*/
 }
 
@@ -108,6 +108,7 @@ header {
 
 .menu>ul>li>ul>li {
     display : none; /*fais disparaitre les sous menus*/
+    
 }  
 
 
@@ -302,10 +303,6 @@ li:hover>a>.Overline::before {
     transform: translate(-50%, 0) scaleX(1);
     opacity: 1;
 }
-
-
-
-
 
 /*******************************************************************************/
 

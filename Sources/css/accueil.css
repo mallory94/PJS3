@@ -193,14 +193,23 @@ header {
 }
 
 .emploi:hover>a{
-    
-    color : #c6431b;
-    border-top: -15px, solid, red; 
+    color : #b87865;
 }
 
-
-.amenagement{
+.amenagement:hover>a{
     color: #5f72b2;
+}
+
+.tourisme:hover>a{
+    color: #d5872e;
+}
+
+.environnement:hover>a{
+    color: #2aa868;
+}
+
+.intercommu:hover>a {
+    color : #103d82;
 }
 
 @keyframes opacity { /*mets des barres bleues horizontales autour de la maps du footer*/
@@ -326,4 +335,17 @@ li:hover>a>.Overline::before {
 
 .vie-scolaire .Overline::before {
     background-color: #a20909;
+}
+
+
+.tourisme .Overline::before{
+    background-color: #d5872e;
+}
+
+.environnement .Overline::before{
+    background-color: #2aa868;
+}
+
+.intercommu .Overline::before{
+    background-color : #103d82;
 }

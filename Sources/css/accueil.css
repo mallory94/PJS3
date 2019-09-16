@@ -4,8 +4,12 @@
     z-index: 1;
 }
 
-.menu *{
+.menu>ul>li>ul{
     z-index:2;
+}
+
+.menu>ul>li>ul>li>ul>li:hover>a{
+    font-weight: bold;
 }
 
 a {
@@ -140,9 +144,6 @@ header.banderole {
     width:inherit;
 }
 
-.menu>ul>li>ul>li:hover>ul>li {
-
-}
 
 
 .menu>ul>li>ul>li:hover>ul { /*gere l'animation d'apparition*/

@@ -1,5 +1,16 @@
 
 
+.content *{
+    z-index: 1;
+}
+
+.menu *{
+    z-index:2;
+}
+
+a {
+    color : #103d82;
+}
 
 .intercom {
     background-color: #103d82; /*couleur bleue de la banderole tout en haut*/
@@ -121,7 +132,16 @@ header.banderole {
 
 .menu>ul>li:hover>ul {
     display:block;
-    border-bottom: 100px solid transparent;
+    padding-bottom: 45px;
+    width: 175%;
+}
+
+.menu>ul>li:hover>ul>li>ul>li {
+    width:inherit;
+}
+
+.menu>ul>li>ul>li:hover>ul>li {
+
 }
 
 
@@ -138,8 +158,19 @@ header.banderole {
     animation-name: opacity;
     animation-duration:  1s;
     animation-fill-mode: forwards;
-    border-top: 15px solid white;
+    border-top: 15px solid transparent;
     
+}
+
+.menu>ul>li>ul>li>ul {
+    width: auto;
+}
+
+.menu>ul>li>ul{
+    background-clip: padding-box;
+    background-color: white;
+    
+    border-radius: 10px 40px;
 }
 
 .menu>ul>li>ul {
@@ -304,6 +335,7 @@ li:hover>a>.Overline::before {
     opacity: 1;
 }
 
+
 /*******************************************************************************/
 
 .vie-scolaire .Overline::before {
@@ -339,4 +371,53 @@ li:hover>a>.Overline::before {
 
 .intercommu .Overline::before{
     background-color : #103d82;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.menu>ul>li.vie-scolaire:hover>ul{
+    border: 2px solid #a20909;
+}
+
+.menu>ul>li.emploi:hover>ul  {
+    border: 2px solid #c6431b;
+}
+
+
+
+.menu>ul>li.amenagement:hover>ul  {
+    border: 2px solid #5f72b2;
+}
+
+.menu>ul>li.eau:hover>ul  {
+    border: 2px solid #2596aa;
+}
+
+.menu>ul>li.vie-scolaire:hover>ul  {
+    border: 2px solid #a20909;
+}
+
+
+.menu>ul>li.tourisme:hover>ul {
+    border: 2px solid #d5872e;
+}
+
+.menu>ul>li.environnement:hover>ul {
+    border: 2px solid #2aa868;
+}
+
+.menu>ul>li.intercommu:hover>ul {
+    border: 2px solid #103d82;
 }

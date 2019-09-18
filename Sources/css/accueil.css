@@ -1,5 +1,4 @@
 
-
 .content *{
     z-index: 1;
 }
@@ -98,7 +97,7 @@ header.banderole {
 .menu a {
     color : black;
     font-family: 'Quicksand', sans-serif;
-    text-decoration: none;
+    text-decoration: center;
     padding: 5px 10px;
 }
 
@@ -162,7 +161,7 @@ header.banderole {
     animation-duration:  1s;
     animation-fill-mode: forwards;
     border-top: 15px solid transparent;
-    
+    text-align: center;
 }
 
 .menu>ul>li>ul>li>ul {
@@ -183,7 +182,7 @@ header.banderole {
 .menu>ul>li>ul>li>ul>li {
     border-top: 15px solid white;
     font-size: 80%;
-    text-align : left;
+    text-align : center;
     width: 150%;
 }
 
@@ -256,7 +255,7 @@ header.banderole {
 }
 
 .menu>ul:hover li{
-    text-align: left;
+    text-align: center;
 }
 
 .content {

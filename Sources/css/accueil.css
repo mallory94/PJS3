@@ -8,9 +8,11 @@
     z-index:2;
 }
 
-.menu>ul>li>ul>li>ul>li:hover>a{
+.menu>ul>li>ul>li>ul>li:hover>a, .menu>ul>li>ul>li:hover>a{
     font-weight: bold;
 }
+
+
 
 a {
     color : #103d82;
@@ -261,6 +263,12 @@ header.banderole {
     padding-bottom: 4000px; /*sert à crée un espace vide au dessus de la carte Maps*/
 }
 
+
+.menu>ul>li>ul>li>a{
+    text-align: center;
+}
+
+
 @keyframes subMenuDisappear {
     from{
         opacity: 1;
@@ -422,3 +430,5 @@ li:hover>a>.Overline::before {
 .menu>ul>li.intercommu:hover>ul {
     border: 2px solid #103d82;
 }
+
+

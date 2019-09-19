@@ -5,9 +5,13 @@
 
 
 
-.menu *, .menu {
+.menu>ul {
     z-index:2;
 }
+
+/* .menu>ul>li>ul *{
+    z-index:3;
+} */
 
 .menu>ul>li>ul>li>ul>li:hover>a, .menu>ul>li>ul>li:hover>a{
     font-weight: bold;
@@ -173,7 +177,7 @@ header.banderole {
 .menu>ul>li>ul{
     background-clip: padding-box;
     background-color: white;
-    
+    z-index:3;
     border-radius: 10px 40px;
 }
 

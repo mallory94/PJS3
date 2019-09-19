@@ -3,7 +3,9 @@
     z-index: 1;
 }
 
-.menu>ul>li>ul{
+
+
+.menu *, .menu {
     z-index:2;
 }
 
@@ -43,7 +45,7 @@ body {
 }
 
 footer{
-    position: absolute;
+    position: relative;
     bottom: 0;
     /*width: 85%;*/
     display: inline-block;
@@ -258,11 +260,6 @@ header.banderole {
     text-align: center;
 }
 
-.content {
-    padding-bottom: 4000px; /*sert à crée un espace vide au dessus de la carte Maps*/
-}
-
-
 .menu>ul>li>ul>li>a{
     text-align: center;
 }
@@ -431,3 +428,17 @@ li:hover>a>.Overline::before {
 }
 
 
+
+
+
+/*TENTATIVE DE FIXAGE*/
+
+/* #banner *, #banner {
+    z-index: 1;
+}
+
+
+.menu{
+    position : fixed;
+    background-color: white;
+} */

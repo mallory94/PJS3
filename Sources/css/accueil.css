@@ -93,11 +93,7 @@ header.banderole {
 }
 
 
-@media screen and (max-width: 1080px){
-    .SoumisBandesBlanches { 
-        width: 100%; /*supprime les bandes blanches*/
-    }
-}
+
 
 
 .menu a {
@@ -468,3 +464,41 @@ li:hover>a>.Overline::before {
     position : fixed;
     background-color: white;
 } */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CSS pour écran de largeur moyenne */
+
+@media screen and (max-width: 1080px){
+    .SoumisBandesBlanches { 
+        width: 100%; /*supprime les bandes blanches*/
+    }
+    .menu>ul * {
+        display : none;
+    }
+
+}
+
+/* CSS pour smartphone */
+
+@media only screen and (max-width: 600px) {
+    .menu>ul * {
+        display : none;
+    }
+}

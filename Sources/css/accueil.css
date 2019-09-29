@@ -7,9 +7,10 @@
 	float: left;
 }
 
- .acces-rapide {	 
-	float: right;
- }
+.content_main{
+	float:right;
+}
+
  
 .menu>ul {
     z-index:2;
@@ -438,6 +439,122 @@ li:hover>a>.Overline::before {
 }
 
 
+/* CODE CSS DE L'ACCES RAPIDE */
+
+.card-body{
+	overflow:hidden;
+	padding-bottom:0rem;
+	flex: 1 1 auto;
+	padding: 1.25rem;
+}
+
+@media (min-width: 768px)
+.col-md-3 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+.icons > .column {
+    max-width: 30%;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.icons a {
+    text-decoration: none;
+}
+
+.card {
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+    border: 1px solid rgba(0,0,0,.125);
+}
+
+div {
+    display: block;
+}
+
+.col-md-3{
+	position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.card h3 {
+    background-color: #103d82;
+    border-color: #103d82;
+}
+
+.card-header:first-child {
+    background-color: #103d82;
+    color: white;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+}
+
+.card h3 {
+    /* text-align: center; */
+    font-size: 1.1em;
+    margin: 0;
+}
+
+.card-header {
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: rgba(0,0,0,.03);
+    border-bottom: 1px solid rgba(0,0,0,.125);
+}
+
+.card-body img {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    max-width: 360px;
+    height: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.content_main .content {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 992px)
+.col-lg-9 {
+    -ms-flex: 0 0 75%;
+    /* flex: 0 0 75%; */
+    max-width: 75%;
+}
+
+/*Effet sur les images */ 
+.column div img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.column a:hover img {
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+/* FIN DU CODE CSS DE L'ACCES RAPIDE */
 
 
 

@@ -441,6 +441,7 @@ li:hover>a>.Overline::before {
 
 /* CODE CSS DE L'ACCES RAPIDE */
 
+/*DEBUT ACCES RAPIDE */
 .card-body{
 	overflow:hidden;
 	padding-bottom:0rem;
@@ -448,16 +449,6 @@ li:hover>a>.Overline::before {
 	padding: 1.25rem;
 }
 
-@media (min-width: 768px)
-.col-md-3 {
-    -ms-flex: 0 0 25%;
-    flex: 0 0 25%;
-    max-width: 25%;
-}
-
-*, ::after, ::before {
-    box-sizing: border-box;
-}
 
 .icons > .column {
     max-width: 30%;
@@ -535,12 +526,6 @@ div {
     margin-left: auto;
 }
 
-@media (min-width: 992px)
-.col-lg-9 {
-    -ms-flex: 0 0 75%;
-    /* flex: 0 0 75%; */
-    max-width: 75%;
-}
 
 /*Effet sur les images */ 
 .column div img {
@@ -553,7 +538,71 @@ div {
 	-webkit-transform: scale(1.1);
 	transform: scale(1.1);
 }
+/*FIN ACCES RAPIDE*/
 
+/*DEBUT CONTACT*/
+.list-group-item active h3 {
+    background-color: #103d82;
+    border-color: #103d82;
+}
+
+.list-group-item active {
+    z-index: 2;
+    color: #fff;
+	background-color: #007bff;
+    border-color: #007bff;
+}
+
+h3 img {
+    max-width: 40px;
+    height: auto;
+    padding-right: 20px;
+    float: left;
+}
+
+.intercom .card h3 {
+    background-color: #103d82;
+    border-color: #103d82;
+}
+
+.list-group-item.active {
+    background-color: #103d82;
+    border-color: #103d82;
+}
+/*FIN CONTACT*/
+
+/*DEBUT REVUE BIANNUELLE*/
+
+.ce-uploads li {
+    list-style: none outside none;
+    margin: 1em 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+.ce-uploads a {
+    font-size: 0.9em;
+}
+
+.ce-uploads img {
+	position:relative;
+    padding-right: 0;
+    margin-right: 0px;
+}
+
+/*FIN REVUE BIANNUELLE*/
+
+/*DEBUT CHATEAU*/
+
+div.csc-textpic .csc-textpic-imagewrap img {
+    border: none;
+    display: block;
+}
+
+/*FIN CHATEAU*/
 /* FIN DU CODE CSS DE L'ACCES RAPIDE */
 
 

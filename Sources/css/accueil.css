@@ -3,8 +3,15 @@
     z-index: 1;
 }
 
+.content {
+	float: left;
+}
 
+.content_main{
+	float:right;
+}
 
+ 
 .menu>ul {
     z-index:2;
 }
@@ -327,7 +334,7 @@ header.banderole {
     position: absolute;
     top: -2px;
     left: 50%;
-    width: 100%;
+    width: 20%;
     height: 2px;
     opacity: 0;
     transform-origin: center;
@@ -428,6 +435,7 @@ li:hover>a>.Overline::before {
 }
 
 
+<<<<<<< HEAD
 .carousel-control-next:hover, .carousel-control-prev:hover {
     animation-name: lightOpacityIn;
     animation-duration: 0.5s;
@@ -446,6 +454,173 @@ li:hover>a>.Overline::before {
 }
 
 
+=======
+/* CODE CSS DE L'ACCES RAPIDE */
+
+/*DEBUT ACCES RAPIDE */
+.card-body{
+	overflow:hidden;
+	padding-bottom:0rem;
+	flex: 1 1 auto;
+	padding: 1.25rem;
+}
+
+
+.icons > .column {
+    max-width: 30%;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.icons a {
+    text-decoration: none;
+}
+
+.card {
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+    border: 1px solid rgba(0,0,0,.125);
+}
+
+div {
+    display: block;
+}
+
+.col-md-3{
+	position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.card h3 {
+    background-color: #103d82;
+    border-color: #103d82;
+}
+
+.card-header:first-child {
+    background-color: #103d82;
+    color: white;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+}
+
+.card h3 {
+    /* text-align: center; */
+    font-size: 1.1em;
+    margin: 0;
+}
+
+.card-header {
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: rgba(0,0,0,.03);
+    border-bottom: 1px solid rgba(0,0,0,.125);
+}
+
+.card-body img {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    max-width: 360px;
+    height: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.content_main .content {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+/*Effet sur les images */ 
+.column div img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.column a:hover img {
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+/*FIN ACCES RAPIDE*/
+
+/*DEBUT CONTACT*/
+.list-group-item active h3 {
+    background-color: #103d82;
+    border-color: #103d82;
+}
+
+.list-group-item active {
+    z-index: 2;
+    color: #fff;
+	background-color: #007bff;
+    border-color: #007bff;
+}
+
+h3 img {
+    max-width: 40px;
+    height: auto;
+    padding-right: 20px;
+    float: left;
+}
+
+.intercom .card h3 {
+    background-color: #103d82;
+    border-color: #103d82;
+}
+
+.list-group-item.active {
+    background-color: #103d82;
+    border-color: #103d82;
+}
+/*FIN CONTACT*/
+
+/*DEBUT REVUE BIANNUELLE*/
+
+.ce-uploads li {
+    list-style: none outside none;
+    margin: 1em 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+.ce-uploads a {
+    font-size: 0.9em;
+}
+
+.ce-uploads img {
+	position:relative;
+    padding-right: 0;
+    margin-right: 0px;
+}
+
+/*FIN REVUE BIANNUELLE*/
+
+/*DEBUT CHATEAU*/
+
+div.csc-textpic .csc-textpic-imagewrap img {
+    border: none;
+    display: block;
+}
+
+/*FIN CHATEAU*/
+/* FIN DU CODE CSS DE L'ACCES RAPIDE */
+>>>>>>> Acess_Rapide
 
 @keyframes lightOpacityOut {
     from {background-color: rgba(255, 255, 255, 0.50);}

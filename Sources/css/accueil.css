@@ -334,7 +334,7 @@ header.banderole {
     position: absolute;
     top: -2px;
     left: 50%;
-    width: 20%;
+    width: 100%;
     height: 2px;
     opacity: 0;
     transform-origin: center;
@@ -435,7 +435,6 @@ li:hover>a>.Overline::before {
 }
 
 
-<<<<<<< HEAD
 .carousel-control-next:hover, .carousel-control-prev:hover {
     animation-name: lightOpacityIn;
     animation-duration: 0.5s;
@@ -454,7 +453,6 @@ li:hover>a>.Overline::before {
 }
 
 
-=======
 /* CODE CSS DE L'ACCES RAPIDE */
 
 /*DEBUT ACCES RAPIDE */
@@ -620,7 +618,6 @@ div.csc-textpic .csc-textpic-imagewrap img {
 
 /*FIN CHATEAU*/
 /* FIN DU CODE CSS DE L'ACCES RAPIDE */
->>>>>>> Acess_Rapide
 
 @keyframes lightOpacityOut {
     from {background-color: rgba(255, 255, 255, 0.50);}

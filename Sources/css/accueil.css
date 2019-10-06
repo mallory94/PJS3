@@ -274,6 +274,10 @@ header.banderole {
     font-size: 18;
 }
 
+.menu>ul>li>ul>li>a:hover{
+    
+}
+
 
 @keyframes subMenuDisappear {
     from{
@@ -349,6 +353,8 @@ li:hover>a>.Overline::before {
     transform: translate(-50%, 0) scaleX(1);
     opacity: 1;
 }
+
+
 
 
 /*******************************************************************************/
@@ -660,7 +666,7 @@ div.csc-textpic .csc-textpic-imagewrap img {
 
 /* CSS pour écran de largeur moyenne */
 
-@media screen and (max-width: 1080px){
+@media screen and (max-width: 1280px){
     .SoumisBandesBlanches { 
         width: 100%; /*supprime les bandes blanches*/
     }
@@ -679,6 +685,6 @@ div.csc-textpic .csc-textpic-imagewrap img {
 }
 
 
-.menu>ul>li>ul{
-    
+.menu>ul>li>ul>li>ul>li>a{
+    font-size: 15;
 }

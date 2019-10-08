@@ -28,9 +28,7 @@ a {
     color : #103d82;
 }
 
-.menu>ul>li>a{
-    font-size: 18;
-}
+
 
 .intercom {
     background-color: #103d82; /*couleur bleue de la banderole tout en haut*/
@@ -139,41 +137,13 @@ header.banderole {
 }  
 
 
-.menu>ul>li>ul>li>ul {  /*Réduit les sous-sous menus*/
-    animation-name: subMenuDisappear;
-    animation-delay: 0s;
-    animation-duration: 0s;
-    animation-fill-mode: forwards;
-} 
-
-.menu>ul>li:hover>ul {
-    display:block;
-    padding-bottom: 45px;
-    width: 175%;
-}
-
-.menu>ul>li:hover>ul>li>ul>li {
-    width:inherit;
-}
 
 
 
-.menu>ul>li>ul>li:hover>ul { /*gere l'animation d'apparition*/
-    animation-name: subMenuAppear;
-    animation-fill-mode: forwards;
-    animation-duration: 0s;
-}
 
 
-.menu>ul>li:hover>ul>li{ /*anime l'apparition des sous menus*/
-    display: block;
-    opacity: 0;
-    animation-name: opacity;
-    animation-duration:  1s;
-    animation-fill-mode: forwards;
-    border-top: 15px solid transparent;
-    text-align: center;
-}
+
+
 
 .menu>ul>li>ul>li>ul {
     width: auto;
@@ -197,14 +167,6 @@ header.banderole {
     width: 150%;
 }
 
-.menu>ul>li>ul>li:hover>ul>li   { /*anime l'apparition des sous-sous-menus*/
-    /* display: block; */
-    opacity: 0;
-    animation-name: opacity;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    /*border-left: 15px solid white; */
-}
 
 
 
@@ -265,18 +227,7 @@ header.banderole {
     list-style:none;   /*retire les puces des listes du menu*/
 }
 
-.menu>ul:hover li{
-    text-align: center;
-}
 
-.menu>ul>li>ul>li>a{
-    text-align: center;
-    font-size: 18;
-}
-
-.menu>ul>li>ul>li>a:hover{
-    
-}
 
 
 @keyframes subMenuDisappear {
@@ -661,19 +612,133 @@ div.csc-textpic .csc-textpic-imagewrap img {
 
 
 
+@media screen and (min-width: 1080px) {
+    .menu>ul>li:hover>ul {
+        display:block;
+        padding-bottom: 45px;
+        width: 175%;
+    }
+
+    .menu a {
+        text-decoration: center;
+    }
+    
+    .menu>ul>li:hover>ul>li>ul>li {
+        width:inherit;
+    }
+    
+    .menu>ul:hover li{
+        text-align: center;
+    }
+    
+    .menu>ul>li>ul>li>a{
+        text-align: center;
+    }
+    
+    .menu>ul>li>ul>li:hover>ul { /*gere l'animation d'apparition*/
+        animation-name: subMenuAppear;
+        animation-fill-mode: forwards;
+        animation-duration: 0s;
+    }
+    
+    
+    .menu>ul>li:hover>ul>li{ /*anime l'apparition des sous menus*/
+        display: block;
+        opacity: 0;
+        animation-name: opacity;
+        animation-duration:  1s;
+        animation-fill-mode: forwards;
+        border-top: 15px solid transparent;
+        text-align: center;
+    }
+    
+    .menu>ul>li>ul>li:hover>ul>li   { /*anime l'apparition des sous-sous-menus*/
+        /* display: block; */
+        opacity: 0;
+        animation-name: opacity;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        /*border-left: 15px solid white; */
+    }
+    
+    
+    .menu>ul>li:hover>ul>.hightlight-line{
+        display: block;
+        border : 0;
+        height:0px;
+        animation-name: linegrow;
+        animation-duration:1.5s;
+        animation-fill-mode: forwards;
+    }
+
+    .menu>ul>li>a{
+        font-size: 18;
+    }
+
+    .menu>ul>li>ul>li>ul>li>a{
+        font-size: 15;
+    }
+
+    .menu>ul:hover li{
+        text-align: center;
+    }
+    
+    .menu>ul>li>ul>li>a{
+        text-align: center;
+        font-size: 18;
+    }
+    .menu>ul>li>ul>li:hover>ul { /*gere l'animation d'apparition*/
+        animation-name: subMenuAppear;
+        animation-fill-mode: forwards;
+        animation-duration: 0s;
+    }
+}
+
 
 
 
 /* CSS pour écran de largeur moyenne */
 
-@media screen and (max-width: 1280px){
+@media screen and (max-width: 1080px){
     .SoumisBandesBlanches { 
         width: 100%; /*supprime les bandes blanches*/
     }
-    .menu>ul * {
-        display : none;
+    .menu ul {
+        display : flex;
+        flex-direction: column;
     }
 
+    
+    .menu>ul:active * {
+        display : flex;
+    }
+    
+
+    .menu>ul>li>ul:active>li>ul>li , .menu>ul>li>ul:active>li>ul>li { /*anime l'apparition des sous-sous-menus*/
+        display: block; 
+        opacity: 0;
+        animation-name: opacity;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        /*border-left: 15px solid white; */
+    }
+
+    .menu>ul {
+        width: 100%;
+    }
+
+    .menu>ul>li {
+        text-align: start;
+    }
+
+    .menu>ul>li:hover>ul {
+        border: 0px;
+    }
+
+
+    /* .menu>ul>li>ul {
+        position: inherit; 
+    } */
 }
 
 /* CSS pour smartphone */
@@ -685,6 +750,3 @@ div.csc-textpic .csc-textpic-imagewrap img {
 }
 
 
-.menu>ul>li>ul>li>ul>li>a{
-    font-size: 15;
-}

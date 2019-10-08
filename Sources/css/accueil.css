@@ -24,6 +24,13 @@
     font-weight: bold;
 }
 
+.menu>ul>li>ul>li>ul {  /*Réduit les sous-sous menus*/
+    animation-name: subMenuDisappear;
+    animation-delay: 0s;
+    animation-duration: 0s;
+    animation-fill-mode: forwards;
+} 
+
 a {
     color : #103d82;
 }

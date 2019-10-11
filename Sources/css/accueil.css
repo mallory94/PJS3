@@ -724,6 +724,10 @@ div.csc-textpic .csc-textpic-imagewrap img {
         animation-fill-mode: forwards;
         animation-duration: 0s;
     }
+
+    .navbar{
+        display : none;
+    }
 }
 
 

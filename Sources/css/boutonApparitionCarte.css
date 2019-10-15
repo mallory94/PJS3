@@ -80,8 +80,10 @@
 
  #bandeBouttonCarte{
   background-color : #103d82;
-  height : 4rem; 
+  height : 6rem; 
   text-align: center;
+  border-top : 1rem solid #103d82;
+  border-bottom : 1rem solid #103d82;
 } 
 
 #bandeBouttonCarte a {
@@ -93,4 +95,13 @@
 .btnCarte {
   margin: 0 auto;
   font-weight: bold;
+}
+
+@media screen and (max-width: 480px) {
+  .btnCarte {
+    font-size: 0.5em;
+    height: auto;
+    text-align: center;
+  }
+
 }

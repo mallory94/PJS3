@@ -1,6 +1,8 @@
 var estCache = false;
 var btn = document.querySelector('.btnCarte')
 
+
+
 btn.onclick = function appelCarte(){
     var mapItems = document.querySelector('.contenuCarte *')
     

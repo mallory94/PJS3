@@ -2,6 +2,8 @@ var map = document.querySelector('#map')
 var paths = map.querySelectorAll('.map__image a')
 var links = map.querySelectorAll('.map__list a')
 
+
+
 //Polyfill du foreach --> compatibilité sur tous les navigateurs
 if (NodeList.prototype.forEach === undefined){
     NodeList.prototype.forEach = function (callback) {

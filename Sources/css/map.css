@@ -1,5 +1,13 @@
 .map {
-    overflow: hidden;
+    overflow: hidden; 
+    padding-top : 20px;
+    padding-bottom: 20px;
+}
+
+.mb-5, .my-5 {
+    margin-bottom: 0rem!important;
+    margin-top: 0rem!important;
+    border-bottom: 3rem solid #103d82;
 }
 
 .map__image {
@@ -8,6 +16,7 @@
     display: block;
     float:left;
     width: 50%;
+    padding-left : 10%;
 }
 
 
@@ -40,7 +49,7 @@
 }
 
 .map__list ul  {
-    list-style-type:circle;
+    list-style-type: decimal;
 }
 
 
@@ -55,14 +64,22 @@
 .map__list a.is-active {
     color: #103D82;
     font-weight: bold;
+    font-size: 120%
 }
 
 
-.map__list.tourisme a.is-active {
-    color: #d5872e;
-    font-weight: bold;
-}
+@media screen and (min-width: 768px) {
+    /* .map {
+        display: flex;
+        flex-direction : column;
+        justify-content: center;
+    } */
 
+    .map__list {
+        font-size : 2vh; 
+        
+    }
+} 
 
 @media screen and (max-width: 768px) {
   .map {
@@ -89,4 +106,9 @@
     }
 
     .liste_deroulante {display:block; margin-right:auto; margin-left:auto;}
+}
+
+
+.cachee {
+    display : none;
 }

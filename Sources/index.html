@@ -9,9 +9,13 @@
     <link rel="stylesheet" type="text/css" href="css/map.css" media="all">
     <link rel="stylesheet" type="text/css" href="bootstrap_items.css" media="all">
 	
-	
+	<link rel="stylesheet" type="text/css" href="css/boutonApparitionCarte.css" media="all">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    
+    
+</script>
+    
 </head>
 
 <body class="SoumisBandesBlanches">
@@ -54,6 +58,7 @@
   
   </nav>
   <!--/.Navbar-->
+
 
 <div class="menu row" role="navigation" aria-label="Menu principal">
     <ul>
@@ -356,7 +361,13 @@
 
 <!-- FIN DU CODE POUR LE CAROUSEL -->
 
-<div id="c1984" class="csc-frame csc-frame-default">
+
+
+<div id="bandeBouttonCarte"><div class="center-btn"><button class="btnCarte btn--stripe btn--large" onclick="appelCarte()">Carte Interactive</button></div></div>
+
+
+
+<div id="c1984" class="contenuCarte csc-frame csc-frame-default">
     <div id="c1984" class="frame frame-default frame-type-html frame-layout-0">
         <div class="map my-5" id="map">
             <div class="map__image"><svg id="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800.04 800.75">
@@ -500,10 +511,12 @@
                 </ul>
             </div>
         </div>
-        <script src="../js/script-map.js"></script>
+        
     </div>
 
 </div>
+<script src="../js/script-map.js"></script>
+<script language="JavaScript" type="text/javascript" src="../js/script-btnMap.js" ></script>
 
 
 

@@ -798,3 +798,7 @@ div.csc-textpic .csc-textpic-imagewrap img {
     padding-right : 0px;
     padding-left: 0px;
 }
+
+#content_main {
+    padding-left: 45px;
+}

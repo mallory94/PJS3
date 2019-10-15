@@ -1,11 +1,11 @@
-var estCache = false;
+var estCache = true;
 var btn = document.querySelector('.btnCarte')
 
 
 
 btn.onclick = function appelCarte(){
     var mapItems = document.querySelector('.contenuCarte *')
-    
+    console.log("la fonction appelCarte s'execute")
     if (estCache == false) {
         mapItems.classList.add('cachee')
         estCache = true;
@@ -16,3 +16,4 @@ btn.onclick = function appelCarte(){
         estCache = false;
     }
 }
+

@@ -11,26 +11,8 @@
 	float:right;
 }
 
- 
-.menu>ul {
-    z-index:2;
-    margin-bottom: 10px;
-}
 
-/* .menu>ul>li>ul *{
-    z-index:3;
-} */
 
-.menu>ul>li>ul>li>ul>li:hover>a, .menu>ul>li>ul>li:hover>a{
-    font-weight: bold;
-}
-
-.menu>ul>li>ul>li>ul {  /*Réduit les sous-sous menus*/
-    animation-name: subMenuDisappear;
-    animation-delay: 0s;
-    animation-duration: 0s;
-    animation-fill-mode: forwards;
-} 
 
 a {
     color : #103d82;
@@ -111,38 +93,6 @@ header.banderole {
 
 
 
-.menu a {
-    color : black;
-    font-family: 'Quicksand', sans-serif;
-    text-decoration: center;
-    padding: 5px 10px;
-}
-
-
-
-.menu>ul>li {
-    position: relative;
-    text-align: center;
-    float : left;
-    padding : 18px;
-    box-sizing: border-box;
-    
-}
-
-
-/* A REMETTRE APRES AVOIR REGLE LE PROBLEME DES SUB MENU QUI DISPARAISSENT*/
-.menu>ul ul {
-    padding-inline-start:  0px; /*retire*/
-}
-
-.menu li a{
-    text-decoration: none;
-}
-
-.menu>ul>li>ul>li {
-    display : none; /*fais disparaitre les sous menus*/
-    
-}  
 
 
 
@@ -153,39 +103,9 @@ header.banderole {
 
 
 
-.menu>ul>li>ul>li>ul {
-    width: auto;
-}
-
-.menu>ul>li>ul{
-    background-clip: padding-box;
-    background-color: white;
-    z-index:3;
-    border-radius: 10px 40px;
-}
-
-.menu>ul>li>ul {
-    position: absolute;
-}
-
-.menu>ul>li>ul>li>ul>li {
-    border-top: 15px solid white;
-    font-size: 80%;
-    text-align : center;
-    width: 150%;
-}
 
 
 
-
-
-
-.menu>ul>li>ul>li>ul>li {
-    animation-name: opacityReverse;
-    animation-duration: 1.s;
-    animation-fill-mode: forwards;
-    border : red;
-}
 
 .vie-scolaire:hover>a {
     color : #a20909
@@ -195,11 +115,7 @@ header.banderole {
     color : #2596aa;
 }
 
-.menu>ul>li:hover>a{
-    animation-name : fontBold;
-    animation-duration: 1.5s;
-    animation-fill-mode: forwards;
-}
+
 
 .emploi:hover>a{
     color : #b87865;
@@ -231,51 +147,14 @@ header.banderole {
     to {opacity:0;}
 } 
 
-.menu ul{
-    list-style:none;   /*retire les puces des listes du menu*/
-}
 
 
 
 
-@keyframes subMenuDisappear {
-    from{
-        opacity: 1;
-        width: unset;
-        height: unset;
-    }
-    to {
-        opacity: 0;
-        width: 0%;
-        height: 0;
-        line-height:0;
-    }
-}
-
-@keyframes subMenuAppear{
-    from{
-        opacity: 0;
-        width: 0%;
-        height: 0%;
-    }
-    to {
-        opacity: 1;
-        width: unset;
-        height: unset;
-    }
-}
 
 
 
 
-.menu>ul>li:hover>ul>.hightlight-line{
-    display: block;
-    border : 0;
-    height:0px;
-    animation-name: linegrow;
-    animation-duration:0.3;
-    animation-fill-mode: forwards;
-}
 
 @keyframes linegrow{
     from{height: 0px;}
@@ -367,40 +246,6 @@ li:hover>a>.Overline::before {
 
 
 
-.menu>ul>li.vie-scolaire:hover>ul{
-    border: 2px solid #a20909;
-}
-
-.menu>ul>li.emploi:hover>ul  {
-    border: 2px solid #c6431b;
-}
-
-
-
-.menu>ul>li.amenagement:hover>ul  {
-    border: 2px solid #5f72b2;
-}
-
-.menu>ul>li.eau:hover>ul  {
-    border: 2px solid #2596aa;
-}
-
-.menu>ul>li.vie-scolaire:hover>ul  {
-    border: 2px solid #a20909;
-}
-
-
-.menu>ul>li.tourisme:hover>ul {
-    border: 2px solid #d5872e;
-}
-
-.menu>ul>li.environnement:hover>ul {
-    border: 2px solid #2aa868;
-}
-
-.menu>ul>li.intercommu:hover>ul {
-    border: 2px solid #103d82;
-}
 
 
 .carousel-control-next:hover, .carousel-control-prev:hover {
@@ -517,9 +362,6 @@ div {
 }
 } 
 
-.acces-rapide {
-
-}
 
 
 .column div img {
@@ -618,118 +460,25 @@ div.csc-textpic .csc-textpic-imagewrap img {
 }
 
 
-/*TENTATIVE DE FIXAGE*/
-
-/* #banner *, #banner {
-    z-index: 1;
-}
-
-
-.menu{
-    position : fixed;
-    background-color: white;
-} */
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
 
 @media screen and (min-width: 1080px) {
-    .menu>ul>li:hover>ul {
-        display:block;
-        padding-bottom: 45px;
-        width: 175%;
-    }
-
-    .menu a {
-        text-decoration: center;
-    }
     
-    .menu>ul>li:hover>ul>li>ul>li {
-        width:inherit;
-    }
-    
-    .menu>ul:hover li{
-        text-align: center;
-    }
-    
-    .menu>ul>li>ul>li>a{
-        text-align: center;
-    }
-    
-    .menu>ul>li>ul>li:hover>ul { /*gere l'animation d'apparition*/
-        animation-name: subMenuAppear;
-        animation-fill-mode: forwards;
-        animation-duration: 0s;
-    }
-    
-    
-    .menu>ul>li:hover>ul>li{ /*anime l'apparition des sous menus*/
-        display: block;
-        opacity: 0;
-        animation-name: opacity;
-        animation-duration:  1s;
-        animation-fill-mode: forwards;
-        border-top: 15px solid transparent;
-        text-align: center;
-    }
-    
-    .menu>ul>li>ul>li:hover>ul>li   { /*anime l'apparition des sous-sous-menus*/
-        /* display: block; */
-        opacity: 0;
-        animation-name: opacity;
-        animation-duration: 1s;
-        animation-fill-mode: forwards;
-        /*border-left: 15px solid white; */
-    }
-    
-    
-    .menu>ul>li:hover>ul>.hightlight-line{
-        display: block;
-        border : 0;
-        height:0px;
-        animation-name: linegrow;
-        animation-duration:1.5s;
-        animation-fill-mode: forwards;
-    }
-
-    .menu>ul>li>a{
-        font-size: 18;
-    }
-
-    .menu>ul>li>ul>li>ul>li>a{
-        font-size: 15;
-    }
-
-    .menu>ul:hover li{
-        text-align: center;
-    }
-    
-    .menu>ul>li>ul>li>a{
-        text-align: center;
-        font-size: 18;
-    }
-    .menu>ul>li>ul>li:hover>ul { /*gere l'animation d'apparition*/
-        animation-name: subMenuAppear;
-        animation-fill-mode: forwards;
-        animation-duration: 0s;
-    }
-
-    .navbar{
-        display : none;
-    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -740,50 +489,15 @@ div.csc-textpic .csc-textpic-imagewrap img {
     .SoumisBandesBlanches { 
         width: 100%; /*supprime les bandes blanches*/
     }
-    .menu ul {
-        display : flex;
-        flex-direction: column;
-    }
-
-    
-    .menu>ul:active * {
-        display : flex;
-    }
     
 
-    .menu>ul>li>ul:active>li>ul>li , .menu>ul>li>ul:active>li>ul>li { /*anime l'apparition des sous-sous-menus*/
-        display: block; 
-        opacity: 0;
-        animation-name: opacity;
-        animation-duration: 1s;
-        animation-fill-mode: forwards;
-        /*border-left: 15px solid white; */
-    }
 
-    .menu>ul {
-        width: 100%;
-    }
-
-    .menu>ul>li {
-        text-align: start;
-    }
-
-    .menu>ul>li:hover>ul {
-        border: 0px;
-    }
-
-
-    /* .menu>ul>li>ul {
-        position: inherit; 
-    } */
 }
 
 /* CSS pour smartphone */
 
 @media only screen and (max-width: 600px) {
-    .menu>ul * {
-        display : none;
-    }
+    
 }
 
 

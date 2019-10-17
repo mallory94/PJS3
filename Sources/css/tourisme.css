@@ -1,0 +1,186 @@
+.text {
+text-align:center;
+width:100%;
+color : white;
+font-weight:bold;
+font-style: oblique;
+  font-size: 35px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.mission {
+	text-align : center;
+	font-size : 25px;
+}
+
+input {
+	box-shadow: 1px 1px 12px #555;
+	border-radius:12px 0 12px 0;
+	background: #d5872e;
+	border:none;
+	color:#fff;
+	font:bold 12px Verdana;
+	padding:8px 0 6px 0;
+	width:30%;
+	min-width:4em;
+	
+	background-image: linear-gradient(to right, #e96443 0%, #904e95 51%, #e96443 100%);
+}
+
+input:hover {
+	background-position: right center;
+
+}
+
+
+.tourisme h2 {
+	font-size : 45px;
+	color : #d5872e;
+	text-align:center;
+}
+
+
+
+p {
+	font-size: 90px;
+}
+
+.lien {
+		font-weight:bold;
+}
+
+.tourismeMission {
+   margin : 10px;
+   padding: 4px;
+   border-radius: 100%;
+   width:20% ;
+   box-shadow: 1px 1px 12px #555;
+   overflow:hidden;
+}
+/*zoom sur l'image*/
+
+
+.missions {
+	display:flex;
+	padding-left:10%;
+	margin-left:50px;
+	margin-right:50px;
+}
+
+
+
+.missions img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .2s ease-in-out;
+	transition: .2s ease-in-out;
+}
+
+.missions img:hover {
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+}.missions img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .2s ease-in-out;
+	transition: .2s ease-in-out;
+}
+
+.missions img:hover {
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+}
+
+.missions div {
+	position: relative;
+    display: inline;
+	float: center;
+    width:100%;	
+}
+
+/* dernier texte*/
+.final {
+	/* background-color :#F0FFFF; */
+	text-align:center;
+	 box-shadow: 1px 1px 12px #555;
+	  overflow:auto;
+
+}
+
+.final img {
+	float: left ; 
+	width:10%;
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .text {
+    font-size: 13px;
+  }
+  
+  input {	
+  font-size:10px;
+  padding:2px 0 1px 0;
+  width:20%;
+  }
+  
+  
+  .tourismeMission {
+	  
+	padding:1px;
+width: 65%;	
+	 
+  }
+
+  
+  .missions {
+	 
+	  padding:0;
+	display: block;
+  }
+  
+
+
+  
+}
+
+@media screen and (max-width: 800px) {
+  .text {
+    font-size: 16px;
+  }
+  
+  input {	
+   width:29%;
+  }
+  
+    .tourismeMission {
+	padding:1px;
+	 display:align;
+	 flex-direction: row-reverse;	
+	 width:50%;
+	 
+  }
+
+}
+
+
+@media screen and (max-width: 1000px) {
+
+  
+    .tourismeMission {
+	padding:1px;
+	 display:align;
+	 flex-direction: row-reverse;	
+	 width:50%;
+	 
+  }
+
+}
+
+.intercom {
+    background-color: #d5872e; /*couleur bleue de la banderole tout en haut*/
+    padding: 0 50px; /*créer un espace entre le logo et le début de la banderole bleue*/
+}

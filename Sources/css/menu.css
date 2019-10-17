@@ -154,12 +154,12 @@
     }
 
     
-    .menu>ul:active * {
+    /* .menu>ul:active * {
         display : flex;
-    }
+    } */
     
 
-    .menu>ul>li>ul:active>li>ul>li , .menu>ul>li>ul:active>li>ul>li { /*anime l'apparition des sous-sous-menus*/
+    .menu>ul>li>ul:hover>li>ul>li , .menu>ul>li>ul:hover>li>ul>li { /*anime l'apparition des sous-sous-menus*/
         display: block; 
         opacity: 0;
         animation-name: opacity;
@@ -180,6 +180,8 @@
         border: 0px;
     }
 
+
+    
 }
 
 
@@ -190,9 +192,9 @@
 
 /* CSS pour smartphone */
 @media only screen and (max-width: 600px) {
-    .menu>ul * {
+    /* .menu>ul * {
         display : none;
-    }
+    } */
 }
 
 
@@ -312,3 +314,4 @@
 .menu>ul>li.intercommu:hover>ul {
     border: 2px solid #103d82;
 }
+

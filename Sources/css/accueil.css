@@ -236,8 +236,11 @@ li:hover>a>.Overline::before {
 
 
 
-
-
+.table .thead-dark th {
+    color: #fff;
+    background-color: #103d82;
+    border-color: #454d55;
+}
 
 
 

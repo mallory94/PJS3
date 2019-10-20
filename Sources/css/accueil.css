@@ -520,3 +520,48 @@ div.csc-textpic .csc-textpic-imagewrap img {
     padding-left: 45px;
     padding-top: 35px;
 }
+
+
+.espace-btn-minMenu {
+    background-color: #103d82;
+    height: 4rem;
+    text-align: center;
+    border-top: 1rem solid #103d82;
+    border-bottom: 1rem solid #103d82;
+}
+
+@media only screen and (min-width: 700px) {
+    .minMenu {
+        display: none;
+    }
+    .espace-btn-minMenu {
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 700px) {
+    .minMenu {
+        display: inline-block;
+    }
+    .espace-btn-minMenu {
+        display : block;
+    }
+}
+
+.minMenu {
+    background-color:#103d82;
+    color : rgb(255, 255, 255);
+    border: 2px solid white;
+    font-weight: bold;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    width : 150px;
+}
+
+

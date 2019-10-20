@@ -40,7 +40,6 @@
 
 
 
-@media screen and (min-width: 0px) {
     .menu>ul>li:hover>ul {
         display:block;
         padding-bottom: 45px;
@@ -124,7 +123,8 @@
     .navbar{
         display : none;
     }
-}
+
+
 
 
 
@@ -143,24 +143,81 @@
     
 }  
 
+@media only screen and (max-width: 1640px) {
+    .menu>ul>li:hover>ul {
+        width: 120%;
+
+    }
+}
+
+
+@media only screen and (max-width: 1080px) {
+    .menu>ul>li:hover>ul {
+        width: 100%;
+
+    }
+}
 
 @media screen and (min-width: 700px) {
     .menu>ul>li:hover>ul {
         padding-left : -25px;
-        width: 100%;
+        
         position : 2;
     }
+
+
+    .logoBayeux {
+        display:none;
+    }
 } 
+
+
 
 /* CSS pour écran de largeur moyenne */
 
  @media screen and (max-width: 700px){
     
+    .menu>ul {
+        /* border-right:  solid red; */
+        
+        padding-left: 40px;
+        padding : 0px;
+        width: 179px;
+        background-color: rgb(255, 255, 255);
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        -webkit-border-top-right-radius: 25px;
+        -webkit-border-bottom-right-radius: 25px;
+        -moz-border-radius-topright: 25px;
+        -moz-border-radius-bottomright: 25px;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+    }
+
+    
+
+    .menu>ul>li>a {
+        font-size:14px;
+    }
+
+
     .menu ul {
         display : flex;
         flex-direction: column;
+
     }
-    
+    .menu{
+        background-color: #103d82;
+        /* background-image: url("../../Ressources/img/logo-blanc.png") ; */
+        border-bottom:  0px solid #103d82;
+    }
+
+    .logoBayeux {
+        position: absolute;
+        left : 255px;
+        display: flex;
+    }
 
     /* .menu>ul>li>ul:hover>li>ul>li , .menu>ul>li>ul:hover>li>ul>li { anime l'apparition des sous-sous-menus
         display: block; 
@@ -181,9 +238,7 @@
     .menu>ul>li:hover>ul {
         border: 0px;
     } */
-    .menu>ul {
-        padding : 0px;
-    }
+
 
 
     .menu>ul>li:hover>ul a{
@@ -192,11 +247,26 @@
 
     .menu>ul>li:hover>ul {
         margin-left: 75%;
-        width: 100%;
-        position : 2;
+        padding-right: 30px;
+        top: -10px;
+        width: 150%;
+        left: 38px;
     }
 }
 
+
+@media screen and (max-width: 700px) and (min-width : 600px) {
+    .zoom {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+    }
+    .zoom:hover {
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3);
+    }
+}
 
 .menu ul{
     list-style:none;   /*retire les puces des listes du menu*/
@@ -205,11 +275,39 @@
 
 /* CSS pour smartphone */
 @media only screen and (max-width: 600px) {
-    /* .menu>ul * {
-        display : none;
-    } */
+    .logoBayeux {
+        left:170px;
+    }
+    /* Dézoomer */
+    .zoom-out {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+    }
+    .zoom-out:hover {
+        -webkit-transform: scale(0.75);
+        transform: scale(0.75);
+    }
+
+    .menu>ul>li.amenagement:hover>ul{
+        padding-bottom : 90px;
+        padding-top: 15px;
+    }
+    ul.level3>li>a {
+        font-size: 11px;
+    }
+
+    .menu>ul>li.amenagement:hover>ul>li>ul  a{
+        font-size : 12;
+    }
+    
 }
 
+
+.banderole-cachee {
+    display: none;
+}
 
 .menu>ul>li>ul>li>ul {
     width: auto;
@@ -328,3 +426,6 @@
     border: 2px solid #103d82;
 }
 
+.menu-cache{
+    display:none;
+}

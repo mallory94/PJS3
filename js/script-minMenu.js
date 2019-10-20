@@ -47,7 +47,7 @@ function autoRedim() {
     if (window.innerWidth <= 700 && estMin == false) {
         minimiseMenu()
     }
-    if (window.innerWidth > 700 && estMin == true) {
+    if (window.innerWidth > 700 ) {
         maximiseMenu();
         banderole.classList.remove('banderole-cachee');
     }

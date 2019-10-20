@@ -1,0 +1,129 @@
+
+
+
+/* La partie de ce code a été quasi intégralement repris de https://cssfx.dev/ avant d'être customisée */
+
+.Overline {
+    position: relative;
+  }
+  
+.Overline::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: 50%;
+    width: 100%;
+    height: 2px;
+    opacity: 0;
+    transform-origin: center;
+    transform: translate(-50%, 0) scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+li:hover>a>.Overline::before {
+    transform: translate(-50%, 0) scaleX(1);
+    opacity: 1;
+}
+
+
+
+
+/*******************************************************************************/
+
+.vie-scolaire .Overline::before {
+    background-color: #a20909;
+}
+
+.emploi .Overline::before {
+    background-color: #c6431b;
+}
+
+
+
+.amenagement .Overline::before {
+    background-color: #5f72b2;
+}
+
+.eau .Overline::before {
+    background-color: #2596aa;
+}
+
+.vie-scolaire .Overline::before {
+    background-color: #a20909;
+}
+
+
+.tourisme .Overline::before{
+    background-color: #d5872e;
+}
+
+.environnement .Overline::before{
+    background-color: #2aa868;
+}
+
+.intercommu .Overline::before{
+    background-color : #103d82;
+}
+
+
+
+.vie-scolaire:hover>a {
+    color : #a20909
+}
+
+.eau:hover>a {
+    color : #2596aa;
+}
+
+
+
+.emploi:hover>a{
+    color : #b87865;
+}
+
+.amenagement:hover>a{
+    color: #5f72b2;
+}
+
+.tourisme:hover>a{
+    color: #d5872e;
+}
+
+.environnement:hover>a{
+    color: #2aa868;
+}
+
+.intercommu:hover>a {
+    color : #103d82;
+}
+
+
+/*restreint la largeur des div pour créer les bandes blanches*/
+.SoumisBandesBlanches {
+    width: 85%;
+}
+
+
+
+/* CSS pour écran de largeur moyenne */
+
+@media screen and (max-width: 1080px){
+    .SoumisBandesBlanches { 
+        width: 100%; /*supprime les bandes blanches*/
+    }
+    
+
+
+}
+
+
+
+@keyframes opacity { /*mets des barres bleues horizontales autour de la maps du footer*/
+    from {opacity: 0; }
+    to {opacity:1;}
+} 
+
+@keyframes opacityReverse { /*mets des barres bleues horizontales autour de la maps du footer*/
+    from {opacity: 1;}
+    to {opacity:0;}
+} 

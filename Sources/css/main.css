@@ -98,10 +98,6 @@ label {
 
 /****** Header ********/
 
-.header {
-    width: 85%;
-    z-index: 1000;
-}
 
 .header-top {
     width: 100%;
@@ -477,7 +473,7 @@ label {
   color: white; text-decoration:none;
 }
 
-.article .header {
+.article  {
   width: 100%; 
   text-align:left;
   z-index: 0;

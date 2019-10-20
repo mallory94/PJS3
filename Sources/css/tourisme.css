@@ -42,11 +42,6 @@ input:hover {
 }
 
 
-
-p {
-	font-size: 90px;
-}
-
 .lien {
 		font-weight:bold;
 }
@@ -183,4 +178,27 @@ width: 65%;
 .intercom {
     background-color: #d5872e; /*couleur bleue de la banderole tout en haut*/
     padding: 0 50px; /*créer un espace entre le logo et le début de la banderole bleue*/
+}
+
+
+.espace-btn-minMenu{
+	background-color : #d5872e;
+	border-color: #d5872e;
+}
+
+.minMenu {
+	background-color: #d5872e;
+	border-color : white;
+}
+
+.minMenu:hover {
+	background-color: white;
+	border-color : #d5872e;
+	color : #d5872e;
+}
+
+@media screen and (max-width: 700px) {
+	.menu{
+		background-color : #d5872e;
+	}
 }

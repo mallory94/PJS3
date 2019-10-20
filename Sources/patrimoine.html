@@ -19,29 +19,32 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!-- <link rel="stylesheet" type="text/css" href="css/accueil.css" media="all"> -->
-    <link rel="stylesheet" type="text/css" href="css/tourisme.css" media="all">
-	<link rel="stylesheet" type="text/css" href="css/main.css" media="all">
-    <link rel="stylesheet" type="text/css" href="css/menu.css" media="all">
+    
+    
+    <link rel="stylesheet" type="text/css" href="css/designCommun.css" media="all">
+    <link rel="stylesheet" type="text/css" href="css/main.css" media="all">
     <link rel="stylesheet" type="text/css" href="css/map.css" media="all">
+    <link rel="stylesheet" type="text/css" href="css/menu.css" media="all">
+    <link rel="stylesheet" type="text/css" href="css/tourisme.css" media="all">
+    
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-<script src="../js/jquery.min.js?1518707708" type="text/javascript"></script>
-<script src="../js/bootstrap.bundle.min.js?1518707708" type="text/javascript"></script>
+<!-- <script src="../js/jquery.min.js?1518707708" type="text/javascript"></script> -->
+<!-- <script src="../js/bootstrap.bundle.min.js?1518707708" type="text/javascript"></script> -->
 
-<script src="../js/polyfill.js?1519395040" type="text/javascript"></script>
+<!-- <script src="../js/polyfill.js?1519395040" type="text/javascript"></script> -->
 
 </head>
 <body class="SoumisBandesBlanches">
 <header class="banderole">
     <div class="intercom"> 
-        <img id="logo-blanc" src="../Ressources/img/logo-blanc.png" alt="logo Bayeux intercom">
+        <img id="logo-blanc" src="../Ressources/img/logo-blanc.png" alt="logo Bayeux intercom"></img>
     </div>
-<header>
+</header>
 
 
 <div class="menu row" role="navigation" aria-label="Menu principal">
@@ -291,14 +294,20 @@
                 <li><a href="/la-communaute-de-communes/nous-contacter/">Nous contacter</a></li>
             </ul>
         </li>
+        <img class="logoBayeux zoom zoom-out" src="../Ressources/img/logo-blanc-resp.png" alt="logo Bayeux intercom"></img>
     </ul>
 </div>
+<div class="espace-btn-minMenu">
+    <button class="minMenu" onclick="minMaxMenu()">Réduire le menu</button>
+    <script src="../js/script-minMenu.js"></script>
+</div>
+
 
 <div id="banner-tourisme">
   <h1></h1>
   	  <img id="tourisme" src="../Ressources/img/tourisme.jpg" width="100%">
         </div>
-</header>
+
  <nav aria-label="breadcrumb" class="fil">
    <ol class="breadcrumb">
       <a href="/">Accueil</a>&nbsp;>&nbsp;<a href="/tourisme/">Tourisme</a>&nbsp;>&nbsp;<a href="/tourisme/patrimoine-historique/">Patrimoine historique</a>
@@ -314,9 +323,9 @@
         
 	<!--  CONTENT ELEMENT, uid:1117/text [begin] -->
 		<div id="c1117" class="csc-frame csc-frame-default">
-<div id="c1117" class="frame frame-default frame-type-text frame-layout-0"><header><h2 class="">
+<div id="c1117" class="frame frame-default frame-type-text frame-layout-0"><h2 class="">
 				Patrimoine
-			</h2></header><p>Bayeux Intercom a déployé 210 panneaux sur son territoire. Chaque panneau est positionné à proximité d'un élément remarquable.</p><p><br /><strong>Choisissez dans la carte ci-dessous une commune pour visualiser son contenu.</strong></p></div>
+			</h2><p>Bayeux Intercom a déployé 210 panneaux sur son territoire. Chaque panneau est positionné à proximité d'un élément remarquable.</p><p><br /><strong>Choisissez dans la carte ci-dessous une commune pour visualiser son contenu.</strong></p></div>
 
 </div>
 	<!--  CONTENT ELEMENT, uid:1117/text [end] -->
@@ -558,50 +567,51 @@ Site de l&#039;office du tourisme<br />
   <!--TYPO3SEARCH_end-->
 <a href="#banner-tourisme" class="ancre">Retour haut de page</a>
 </main>
-<footer class="py-3 text-center column">
-       <div class="row py-4">
-      
-       <div class="col-md-3 separation">
-            <ul class="text-white p-0">
-                <li><a href="/infos/plan-du-site"> Plan du site</a></li>
-                <li><a href="/infos/mentions-legales/"> Mention Légales</a></li>
-                <li><a href="/infos/horaires-et-plans-dacces/"> Horaires & Plan daccès</a></li>
-                <li><a href="/infos/contact/"> Contact</a></li>
-                <li><a href="/infos/accessibilite/"> Accessibilité</a></li>
-            </ul>
-        </div>
-        <div class="col-md-3 separation">
-            <p class="toolbox tourisme col text-white">BOÎTE À OUTILS</p>
-          
-           <span class="fa-stack fa-lg" title="Nous écrire">
-            <a href="/infos/contact/">
-             <img src="../Ressources/img/icones/mail.png" alt="Raccourci vers la page de contact" />
-            </a>
-           </span>
-            <span class="fa-stack fa-lg" title="S'abonner au flux RSS">
-             <a href="?id=256&type=100" target="_blank">
-             <img src="../Ressources/img/icones/rss-icon.png" alt="Icone Flux Rss" />
-             </a>
-           </span> 
-            <span class="fa-stack fa-lg" title="Accéder au site de la ville de Bayeux">
-              <a href="https://www.bayeux.fr/fr">
-               <img src="../Ressources/img/villeBayeux.png" alt="Logo de la ville de Bayeux" />
-              </a>
-           </span>
 
-        </div>
-        <div class="col-md-3 separation">
-            <p class="col text-white">4 place Gauquelin Despallières 14400 BAYEUX</p>
-            <p class="col text-white" ><strong>02 31 51 63 00</strong></p>
-            <p class="col text-center text-white">Du Lundi au Vendredi
-                <br/>8h30-12h00<br />14h00-17h30</p>
-        </div>
-        <div class="col-md-3 ">
-           <img src="../Ressources/img/logo-blanc.png" alt="Logo Bayeux Intercom" style="width:170px; margin:0 0 20px 0;" />
-        </div> 
-    </div>
-   <a href="https://www.google.com/maps/place/Bayeux+Intercom/@49.280067,-0.707003,16z/data=!4m5!3m4!1s0x0:0x81033eeef083791e!8m2!3d49.280067!4d-0.707003?hl=fr-FR" target="_blank"><img class="googlemap" src="../Ressources/img/googlemap-bayeux.JPG" alt="Plan d'accès aux bâtiment de Bayeux Intercom" /></a>
-    <p class="text-white mt-2"> © Bayeux Intercom 2018</p>
-</footer>
 </body>
+<footer class="py-3 text-center column">
+    <div class="row py-4">
+   
+    <div class="col-md-3 separation">
+         <ul class="text-white p-0">
+             <li><a href="/infos/plan-du-site"> Plan du site</a></li>
+             <li><a href="/infos/mentions-legales/"> Mention Légales</a></li>
+             <li><a href="/infos/horaires-et-plans-dacces/"> Horaires & Plan daccès</a></li>
+             <li><a href="/infos/contact/"> Contact</a></li>
+             <li><a href="/infos/accessibilite/"> Accessibilité</a></li>
+         </ul>
+     </div>
+     <div class="col-md-3 separation">
+         <p class="toolbox tourisme col text-white">BOÎTE À OUTILS</p>
+       
+        <span class="fa-stack fa-lg" title="Nous écrire">
+         <a href="/infos/contact/">
+          <img src="../Ressources/img/icones/mail.png" alt="Raccourci vers la page de contact" />
+         </a>
+        </span>
+         <span class="fa-stack fa-lg" title="S'abonner au flux RSS">
+          <a href="?id=256&type=100" target="_blank">
+          <img src="../Ressources/img/icones/rss-icon.png" alt="Icone Flux Rss" />
+          </a>
+        </span> 
+         <span class="fa-stack fa-lg" title="Accéder au site de la ville de Bayeux">
+           <a href="https://www.bayeux.fr/fr">
+            <img src="../Ressources/img/villeBayeux.png" alt="Logo de la ville de Bayeux" />
+           </a>
+        </span>
+
+     </div>
+     <div class="col-md-3 separation">
+         <p class="col text-white">4 place Gauquelin Despallières 14400 BAYEUX</p>
+         <p class="col text-white" ><strong>02 31 51 63 00</strong></p>
+         <p class="col text-center text-white">Du Lundi au Vendredi
+             <br/>8h30-12h00<br />14h00-17h30</p>
+     </div>
+     <div class="col-md-3 ">
+        <img src="../Ressources/img/logo-blanc.png" alt="Logo Bayeux Intercom" style="width:170px; margin:0 0 20px 0;" />
+     </div> 
+ </div>
+<a href="https://www.google.com/maps/place/Bayeux+Intercom/@49.280067,-0.707003,16z/data=!4m5!3m4!1s0x0:0x81033eeef083791e!8m2!3d49.280067!4d-0.707003?hl=fr-FR" target="_blank"><img class="googlemap" src="../Ressources/img/googlemap-bayeux.JPG" alt="Plan d'accès aux bâtiment de Bayeux Intercom" /></a>
+ <p class="text-white mt-2"> © Bayeux Intercom 2018</p>
+</footer>
 </html>

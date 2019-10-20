@@ -239,6 +239,10 @@
         border: 0px;
     } */
 
+    .menu>ul>li.amenagement:hover>ul{
+        padding-bottom : 90px;
+        padding-top: 15px;
+    }
 
 
     .menu>ul>li:hover>ul a{
@@ -290,10 +294,8 @@
         transform: scale(0.75);
     }
 
-    .menu>ul>li.amenagement:hover>ul{
-        padding-bottom : 90px;
-        padding-top: 15px;
-    }
+
+
     ul.level3>li>a {
         font-size: 11px;
     }

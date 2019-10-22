@@ -1,0 +1,354 @@
+.intercom_taxe {
+    background-color: #d5872e; /*couleur orange de la banderole tout en haut*/
+    padding: 0 50px; /*créer un espace entre le logo et le début de la banderole bleue*/
+}
+
+.col-title{
+	color: rgb(213,135,46);
+	font-size: 35px;
+}
+
+h1{
+	color: rgb(213,135,46);
+	font-size: 50px;
+	text-align: center;
+}
+
+.fil{
+	color: black;
+}
+
+.lien{
+	color:black;
+}
+
+.breadcrumb{
+	background-color: white;
+	border-bottom: 0.3px solid rgb(198,198,198);
+}
+
+.partieF{
+	padding-top: 5px;
+	padding-right: 5px;
+	text-align:justify;
+	box-shadow: 1px 1px 12px #555;
+	overflow:auto;
+  font-size: 1.2em;
+}
+
+.pp{
+  font-size: 1.2em;
+}
+
+/*.partieF img {
+	float: left ; 
+}*/
+
+.imgg1{
+  float:left;
+  width: 15%;
+}
+
+.imgg2{
+  float:left;
+  width: 15%;
+}
+
+.partie{
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-left: 10px;
+	text-align:justify;
+	box-shadow: 1px 1px 12px #555;
+	overflow:auto;
+  font-size: 1.2em;
+}
+
+ul {
+list-style:none;
+margin-left:0;
+padding-left:0;
+}
+
+.imgr1{
+	width: 18%;
+	height: 75%;
+  padding-left: 10px;
+}
+.imgr2{
+	width: 20%;
+	height: 80%;
+}
+.imgr3{
+	width: 18%;
+	height: 80%;
+  padding-left: 10px;
+}
+.imgr4{
+	width: 18%;
+	height: 80%;
+  padding-left: 10px;
+}
+
+
+.colonne img {
+  z-index: 1;
+}
+
+.colonne span{
+     position:absolute;  
+     margin-top:23px;
+     margin-left:-35px;
+     color:white;
+     font-weight: bold;
+     background: /*#d5872e /*rgb(234,194,151)*/rgba(213,135,46,.8);
+     padding:15px;
+     border-radius:3px;
+     box-shadow:0 0 2px rgba(0,0,0,.5);
+
+    transform:scale(0) rotate(-12deg);
+    transition:all .25s;    
+
+    z-index : 2;     
+}
+
+.bidule:hover span, .bidule:focus span{
+     transform:scale(1) rotate(0);    
+}
+/*
+.s1,.s2,.s3,.s4{
+ /* display: none;*/
+/*	visibility: hidden;
+}*/
+
+
+.col-lg-9 {
+    max-width: inherit;
+}
+
+
+/* Image ronde */
+/*.rounded div img {
+  width: 200px; /* largeur de l'image */
+  /*height: auto; /* hauteur de l'image */
+  /*-webkit-transition: .3s ease-in-out !important; 
+  transition: .3s ease-in-out !important; 
+}
+.rounded div:hover img:hover {
+  width: 150px; /* on affiche l'image au carré */
+ /* height: 150px;
+  border-radius: 50%; 
+}
+
+
+
+/*pour les trucs de droite*/
+
+.tourisme .card h3 {
+	background-color:#d5872e;
+	    border-color: #d5872e;
+}
+
+.portfolio-item .card {
+  border: none;
+  box-shadow: 0px 0px 24px 1px rgba(168,163,168,0.68);
+}
+
+
+.card-body {
+  overflow: hidden;
+  padding-bottom: 0rem;
+}
+
+.card-body button {
+  border-radius: 0;
+  color: #d5872e;
+}
+
+.card-body img {
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  max-width: 360px;
+  height:auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.image {
+  padding: 0;   
+}
+
+.card {
+  border-top-left-radius: .25rem;
+  border-top-right-radius: .25rem;
+  border: 1px solid rgba(0,0,0,.125);
+}
+
+.card-header:first-child {
+  background-color: #d5872e;
+  color: white;
+  border-top-left-radius: .25rem;
+  border-top-right-radius: .25rem;
+}
+
+.card h3 {
+  /*text-align: center;*/
+  font-size: 1.7em;
+  margin: 0;
+
+}
+
+.card-title  {
+	
+  font-size: 1.3rem;
+}
+
+ h3 img {
+  max-width: 40px;
+  height: auto;
+  padding-right: 20px;
+  float: left;
+}
+
+.card-body p {
+  margin-bottom: 0.1rem !important;
+  margin-left: 2px;
+  margin-right: 2px;
+  font-size: 1.2em;
+}
+
+.ce-gallery img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.ce-uploads-filesize {
+  font-size: 0.8em; 
+}
+
+.ce-row, .ce-gallery {
+  maegin-bottom: 0;
+}
+
+.ce-uploads span {
+  font-size: 0.9rem;
+}
+
+/*
+#content_main{
+	float:left; fait flotter à droite
+}*/
+
+/*#content_main {
+	width:100%;
+}*/
+
+.sectionG{
+	display: flex;
+}
+
+
+.col-md-3{
+/* box-sizing: border-box;*/
+}
+
+.section1{
+	/*color :black;
+	border-style: solid;
+ 	border-width: 2px 10px 4px 20px;*/
+  /*margin-left: inherit;*/
+ 	text-align: justify;
+ }
+
+ .texteu{
+ 	overflow: auto;
+ 	padding-left: 80px;
+ 	margin-left: 100px;/*pour taxe3*/
+ }
+
+ .col-md-3{
+ 	/*display: flex;/*pourtaxe3*/
+ }
+
+.SoumisBandesBlanches{
+    width: 1650px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+footer{
+    position: relative;
+    bottom: 0;
+    /*width: 85%;*/
+    display: inline-block;
+}
+
+header.banderole {
+    margin-top: -10px; /*colle la banderole bleue tout en haut de la page et supprime l'espace qui existait entre.*/
+}
+
+.googlemap {
+    animation-name : ReverseBandesCouleur; /*remets des barres blanches horizontales autour de la maps du footer*/
+    animation-duration: 1.25s;
+    animation-fill-mode: forwards; /*fait en sorte que l'animation se prolonge (sans loop)*/
+    padding-top: 1em;
+    padding-bottom: 1em;
+    width: 100%;
+}
+
+.googlemap:hover {
+    animation-duration: 1.25s;
+    animation-fill-mode: forwards; /*fait en sorte que l'animation se prolonge (sans loop) tant que le hover est actif*/
+    animation-name : BandesCouleur; /*mets des barres bleues horizontales autour de la maps du footer*/
+}
+
+
+@keyframes BandesCouleur { /*mets des barres bleues horizontales autour de la maps du footer*/
+    from {background-color : white;}
+    to {background-color : #d5872e;}
+} 
+
+
+/*remets des barres blanches horizontales autour de la maps du footer*/
+@keyframes ReverseBandesCouleur { 
+    from {background-color : #d5872e;}
+    to {background-color : white;}
+} 
+/*
+.{
+font-style:oblique;
+font-size:35px;
+}*/
+
+
+
+
+.totaal>.colonne{
+	display : flex;
+	flex-direction: row;
+}
+	
+.totaal img {
+	width: 250px;
+}
+
+.colonne {
+	display: flex;
+	flex-direction : row;
+}
+
+span.s1,span.S2,span.s3,span.s4 {
+    z-index: 4;
+    display: grid;
+}
+
+@media only screen and (max-width: 768px) {
+	.texteu{
+		padding-left: 0px;
+		margin-left: 10px;
+	}
+}
+

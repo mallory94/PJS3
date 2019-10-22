@@ -352,3 +352,30 @@ span.s1,span.S2,span.s3,span.s4 {
 	}
 }
 
+.partieF {
+  padding: 20px;
+}
+
+
+
+.intercom {
+  background-color: #d5872e; /*couleur bleue de la banderole tout en haut*/
+  padding: 0 50px; /*créer un espace entre le logo et le début de la banderole bleue*/
+}
+
+
+.espace-btn-minMenu{
+background-color : #d5872e;
+border-color: #d5872e;
+}
+
+.minMenu {
+background-color: #d5872e;
+border-color : white;
+}
+
+.minMenu:hover {
+background-color: white;
+border-color : #d5872e;
+color : #d5872e;
+}

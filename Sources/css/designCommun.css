@@ -104,6 +104,12 @@ li:hover>a>.Overline::before {
 }
 
 
+@media screen and (min-width: 1080px){
+    body {
+        box-shadow: -2px 4px 42px -6px rgba(0, 0, 0, 0.53); /*créer des ombres autour du body*/
+    }
+}
+
 
 /* CSS pour écran de largeur moyenne */
 

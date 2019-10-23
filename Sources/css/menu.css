@@ -483,3 +483,34 @@
     from{font-weight: unset;}
     to {font-weight: bold;}
 }
+
+
+
+.menu>ul>li.vie-scolaire>ul>li:hover>a {
+    color : #a20909
+}
+
+.menu>ul>li.eau>ul>li:hover>a {
+    color : #2596aa;
+}
+
+
+.menu>ul>li.emploi>ul>li:hover>a{
+    color : #b87865;
+}
+
+.menu>ul>li.amenagement>ul>li:hover>a{
+    color: #5f72b2;
+}
+
+.menu>ul>li.tourisme>ul>li:hover>a{
+    color: #d5872e;
+}
+
+.menu>ul>li.environnement>ul>li:hover>a{
+    color: #2aa868;
+}
+
+.menu>ul>li.intercommu>ul>li:hover>a {
+    color : #103d82;
+}

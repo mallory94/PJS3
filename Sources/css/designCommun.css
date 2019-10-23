@@ -116,6 +116,7 @@ li:hover>a>.Overline::before {
 @media screen and (max-width: 1080px){
     .SoumisBandesBlanches { 
         width: 100%; /*supprime les bandes blanches*/
+
     }
     
 

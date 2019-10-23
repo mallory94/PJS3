@@ -272,8 +272,15 @@ padding-left:0;
  	/*display: flex;/*pourtaxe3*/
  }
 
+body {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media screen and (max-width: 1080px) {
 .SoumisBandesBlanches{
     width:100%;
+}
 }
 
 

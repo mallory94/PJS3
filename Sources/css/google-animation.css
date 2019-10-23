@@ -1,0 +1,29 @@
+
+.googlemap {
+    animation-name : ReverseBandesCouleur; /*remets des barres blanches horizontales autour de la maps du footer*/
+    animation-duration: 1.25s;
+    animation-fill-mode: forwards; /*fait en sorte que l'animation se prolonge (sans loop)*/
+    padding-top: 1em;
+    padding-bottom: 1em;
+    width: 100%;
+}
+
+.googlemap:hover {
+    animation-duration: 1.25s;
+    animation-fill-mode: forwards; /*fait en sorte que l'animation se prolonge (sans loop) tant que le hover est actif*/
+    animation-name : BandesCouleur; /*mets des barres bleues horizontales autour de la maps du footer*/
+}
+
+
+@keyframes BandesCouleur { /*mets des barres bleues horizontales autour de la maps du footer*/
+    from {background-color : white;}
+    to {background-color : #d5872e;}
+} 
+
+
+/*remets des barres blanches horizontales autour de la maps du footer*/
+@keyframes ReverseBandesCouleur { 
+    from {background-color : #d5872e;}
+    to {background-color : white;}
+} 
+

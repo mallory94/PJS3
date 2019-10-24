@@ -302,6 +302,7 @@ div {
     .acces-rapide>*{
         width:700px;
     }
+    
 }
 
 @media screen and (min-width:775px){
@@ -310,6 +311,9 @@ div {
     }
     .premier{
         border-left: none;
+    }
+    .acces-rapide .column{
+        margin-right: 20px;
     }
 }
 
@@ -489,3 +493,19 @@ h2>a:hover {
     color:white;
 }
 
+.bodytext {
+    margin-top: 10px;
+    font-size: 25px;
+}
+
+.acces-rapide .bodytext {
+    font-size: 18px;
+}
+
+.my-1{
+    font-size:30px;
+}
+
+.acces-rapide .my-1{
+    font-size:23px;
+}

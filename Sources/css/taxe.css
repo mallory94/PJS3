@@ -406,3 +406,27 @@ color : #d5872e;
       background-color: #d5872e;
   }
 }
+
+
+.ancre {
+  margin: 0 auto;
+  width: 100%;
+  color: white;
+  text-decoration: none;
+  background-color: #d5872e;
+  border-radius: 2px;
+  padding: 10px;
+  text-align: center;
+
+}
+
+.ancre:hover {
+  color: #d5872e;
+  text-decoration: none;
+  background-color: white;
+  border: 3px solid #d5872e;
+}
+
+.centreAncre{
+  padding: 30px;
+}

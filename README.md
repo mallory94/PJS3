@@ -1,5 +1,4 @@
-# PJS3
-Site web refont for School project
+# Refont du site web d'une intercommunalité dans le cadre d'un projet universitaire
 
 Hosted on https://mallory94.github.io/PJS3/
 

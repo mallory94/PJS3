@@ -1,7 +1,7 @@
 # Refont du site web d'une intercommunalité dans le cadre d'un projet universitaire
 
-Hosted on https://mallory94.github.io/PJS3/
-hébergé sur https://mallory94.github.io/PJS3/
+Hosted on https://mallory94.github.io/Refonte-du-site-bayeux-intercom.fr/ |
+hébergé sur https://mallory94.github.io/Refonte-du-site-bayeux-intercom.fr/
 
 3 pages sont disponibles : L'accueil, taxe de séjour, patrimoine.
 
